@@ -1,18 +1,8 @@
-# AI Traffic Congestion Predictor — 9.5/10 Upgrade
+# AI Traffic Congestion Predictor 
 
 A full-stack ML traffic intelligence prototype using a **HistGradientBoostingRegressor** with time-series-aware features, chronological holdout evaluation, historical location profiles, a Flask API, SQLite prediction history, and a responsive dashboard.
 
-## What changed from the original
-- Fixed the original `area` vs `location` model mismatch.
-- Replaced the old direct/random train-test workflow with a chronological holdout.
-- Added time-series features: 30-minute, 60-minute and 24-hour lags plus 6h/24h rolling averages.
-- Added cyclical time encoding (sin/cos), weekend and peak-hour flags.
-- Added city + area + weather encoding inside a single sklearn Pipeline.
-- Added robust API validation and `/health`, `/config`, `/metrics`, `/history` endpoints.
-- Added prediction range based on holdout MAE.
-- Added SQLite logging and a more professional dashboard.
-- Added reproducible training/evaluation scripts.
-- Kept the Java component from the original project.
+
 
 ## Model
 **HistGradientBoostingRegressor** (scikit-learn), a gradient-boosted decision-tree model for tabular regression.
