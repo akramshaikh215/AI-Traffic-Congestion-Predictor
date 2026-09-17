@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Traffic Intelligence</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div><span class="eyebrow">SMART CITY • ML FORECASTING</span><h1>AI Traffic Intelligence</h1><p>Predict traffic volume and congestion using historical patterns, weather and time-series features.</p></div><div class="badge">MODEL <strong>HistGradientBoosting</strong></div></header>
+<main>
+<section class="grid">
+<div class="card"><h2>Traffic Predictor</h2><p class="muted">Choose a location and forecast conditions.</p>
+<form id="form">
+<label>City<select id="city" required></select></label>
+<label>Area<select id="area" required></select></label>
+<div class="two"><label>Date<input id="date" type="date" required></label><label>Time<input id="time" type="time" required></label></div>
+<div class="two"><label>Weather<select id="weather" required></select></label><label>Temperature (°C)<input id="temp" type="number" value="27" min="-10" max="55" required></label></div>
+<button id="btn">ANALYZE TRAFFIC</button><div id="error"></div>
+</form></div>
+<div class="card result" id="result"><div class="result-head"><div><span class="eyebrow">FORECAST RESULT</span><h2 id="level">—</h2></div><div class="score"><span id="score">0</span><small>/100</small></div></div>
+<div class="metrics"><div><b id="volume">—</b><span>vehicles / hour</span></div><div><b id="range">—</b><span>expected range</span></div><div><b id="mae">—</b><span>model MAE</span></div></div>
+<p id="recommendation" class="recommendation">Run a prediction to see travel guidance.</p></div>
+</section>
+<section class="stats grid3"><div class="card stat"><span>MODEL R²</span><b id="r2">—</b></div><div class="card stat"><span>RMSE</span><b id="rmse">—</b><small>vehicles/hour</small></div><div class="card stat"><span>MAE</span><b id="maeTop">—</b><small>vehicles/hour</small></div></section>
+<section class="card"><div class="section-title"><div><h2>Recent predictions</h2><span class="muted">Stored locally in SQLite</span></div><button class="secondary" id="refresh">Refresh</button></div>
+<div class="table-wrap"><table><thead><tr><th>Location</th><th>Date</th><th>Weather</th><th>Volume</th><th>Status</th><th>Score</th></tr></thead><tbody id="history"></tbody></table></div></section>
+</main><footer>Built as an ML portfolio project • Time-series-aware evaluation • Historical profile features</footer>
+<script src="script.js"></script></body></html>

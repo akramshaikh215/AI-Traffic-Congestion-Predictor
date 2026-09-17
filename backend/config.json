@@ -1,0 +1,87 @@
+{
+  "cities": {
+    "Hyderabad": [
+      "HITEC City",
+      "Gachibowli",
+      "Madhapur",
+      "Kukatpally",
+      "Banjara Hills"
+    ],
+    "Mumbai": [
+      "Andheri",
+      "Bandra",
+      "Powai",
+      "Dadar",
+      "Lower Parel"
+    ],
+    "Delhi": [
+      "Connaught Place",
+      "Hauz Khas",
+      "Dwarka",
+      "Saket",
+      "Lajpat Nagar"
+    ],
+    "Bangalore": [
+      "Whitefield",
+      "Electronic City",
+      "Koramangala",
+      "Indiranagar",
+      "Marathahalli"
+    ],
+    "Chennai": [
+      "OMR",
+      "Guindy",
+      "T Nagar",
+      "Velachery",
+      "Adyar"
+    ],
+    "Kolkata": [
+      "Salt Lake",
+      "New Town",
+      "Park Street",
+      "Howrah",
+      "Ballygunge"
+    ],
+    "Pune": [
+      "Hinjewadi",
+      "Kharadi",
+      "Wakad",
+      "Viman Nagar",
+      "Kothrud"
+    ],
+    "Ahmedabad": [
+      "SG Highway",
+      "Navrangpura",
+      "Satellite",
+      "Bopal",
+      "Maninagar"
+    ],
+    "Jaipur": [
+      "Malviya Nagar",
+      "Mansarovar",
+      "C Scheme",
+      "Tonk Road",
+      "Jagatpura"
+    ],
+    "Lucknow": [
+      "Gomti Nagar",
+      "Hazratganj",
+      "Aliganj",
+      "Indira Nagar",
+      "Charbagh"
+    ]
+  },
+  "weather": [
+    "Clear",
+    "Cloudy",
+    "Rainy",
+    "Foggy"
+  ],
+  "model": "HistGradientBoostingRegressor",
+  "target": "traffic_volume",
+  "metrics": {
+    "MAE": 104.57509914151805,
+    "RMSE": 131.63688715681891,
+    "R2": 0.9890815378256057
+  }
+}
