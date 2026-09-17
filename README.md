@@ -71,14 +71,6 @@ POST `/predict`
   "temperature": 27
 }
 ```
-
-## Recommended next step for a true 9.5+ academic/portfolio version
-Use real historical traffic data (traffic counts or GPS speeds) and add:
-1. live map integration,
-2. multi-step forecasting (15/30/60 minutes),
-3. real holiday/event/roadwork features,
-4. model comparison (Random Forest, XGBoost/LightGBM/CatBoost where available),
-5. SHAP feature explanations,
 6. drift monitoring and periodic retraining,
 7. route-level congestion rather than area-level prediction.
 
